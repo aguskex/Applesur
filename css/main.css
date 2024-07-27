@@ -211,5 +211,11 @@
     .titular h2{
         font-size: 48px;
     }
+
+    .text-center img{
+        width: 350px;
+        object-fit: contain;
+        max-width: fit-content;
+    }
 }
 
