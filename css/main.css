@@ -80,10 +80,10 @@ html {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.75),
         rgba(0, 0, 0, 0.75)
-    ), url(/img/iphone-15pro.jpg);
+    ), url(/img/iphone-15promax.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: none;
+    background-size: contain;
 }
 
 .bg-car2 {
@@ -93,7 +93,7 @@ html {
     ), url(/img/iphone-15pro.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: none;
+    background-size: contain;
 }
 
 .bg-car3 {
@@ -103,7 +103,7 @@ html {
     ), url(/img/iphone-15.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: none;
+    background-size: contain;
 }
 
 .card-body {
@@ -201,6 +201,10 @@ html {
     width: 35px;
 }
 
+.text-center img {
+    object-fit: contain;
+}
+
 @media(max-width: 767px) {
     .video {
         min-height: 500px;
@@ -248,10 +252,11 @@ html {
         font-size: 48px;
     }
 
-    .text-center img{
-        width: 350px;
-        object-fit: contain;
-        max-width: fit-content;
+    .text-center img {
+        object-fit: fill;
+        width: 190px;
+        height: 230px;
+        margin-top: 30px;
     }
 }
 #price-container {
@@ -312,9 +317,8 @@ html {
         font-size: 48px;
     }
 
-    .text-center img{
-        width: 350px;
-        object-fit: contain;
-        max-width: fit-content;
+    .text-center img {
+        object-fit: none;
+        width: 200px;
     }
   }
