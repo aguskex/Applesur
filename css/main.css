@@ -9,37 +9,62 @@
     font-size: 18px;
 }
 
-.carousel-item {
-    min-height: 400px;
+.video {
+    position: relative;
+    width: 100%;
+    height: calc(100vw * 0.5625);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-.carousel-caption {
-    bottom: 220px;
+.video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.desktop {
+    position: absolute;
+    left: 0;
+    bottom: 200px;
+    width: 100%;
+    padding: 20px;
+    color: white;
     z-index: 2;
+    text-align: center;
 }
 
-.carousel-caption h5 {
+.desktop h5 {
     font-size: 70px;
     font-weight: 600;
-    text-transform: uppercase;
     margin-top: 25px;
+    text-align: center;
+    padding: 20px;
 }
 
-.carousel-caption p {
+.desktop p {
     width: 60%;
     margin: 10px auto;
     font-size: 18px;
+    text-align: center;
 }
 
-.carousel-inner::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+.desktop a {
+    text-align: center;
 }
 
 .services {
