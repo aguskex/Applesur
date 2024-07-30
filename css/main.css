@@ -258,6 +258,11 @@ html {
         height: 230px;
         margin-top: 30px;
     }
+
+    .imgg img{
+        object-fit: contain;
+        width: 100%;
+    }
 }
 #price-container {
     background: #f8f9fa;
@@ -320,5 +325,10 @@ html {
     .text-center img {
         object-fit: none;
         width: 200px;
+    }
+    
+    .imgg img{
+        object-fit: contain;
+        width: 100%;
     }
   }
