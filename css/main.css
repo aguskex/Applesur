@@ -194,26 +194,25 @@
 }
 
 @media(max-width: 767px) {
-    .carousel-item {
+    .video {
         min-height: 500px;
     }
 
-    .carousel-item img {
+    .video video {
         height: 525px;
     }
 
-    .carousel-caption {
-        bottom: 30px;
+    .desktop {
+        top: 100px;
     }
 
-    .carousel-caption h5 {
+    .desktop h5 {
         font-size: 38px;
         margin-top: 0;
     }
 
-    .carousel-caption p {
-        width: 100%;
-        font-size: 16px;
+    .desktop p {
+        display: none;
     }
 
     .services {
@@ -248,3 +247,56 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .video {
+        min-height: 500px;
+    }
+
+    .video video {
+        height: 525px;
+    }
+
+    .desktop {
+        top: 100px;
+    }
+
+    .desktop h5 {
+        font-size: 38px;
+        margin-top: 0;
+    }
+
+    .desktop p {
+        display: none;
+    }
+
+    .services {
+        padding: 30px 0;
+    }
+
+    .product {
+        padding: 30px 0 0 0;
+    }
+
+    .banner {
+        margin-bottom: 30px;
+    }
+    .banner img{
+        width: 300px;
+    }
+    .iPhone {
+        margin-left: 0;
+        max-width: fit-content;
+    }
+    .titular {
+        margin-top: 50px;
+    }
+    .titular h2{
+        font-size: 48px;
+    }
+
+    .text-center img{
+        width: 350px;
+        object-fit: contain;
+        max-width: fit-content;
+    }
+  }
