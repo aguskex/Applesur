@@ -76,6 +76,10 @@
     background-size: none;
 }
 
+.card-body {
+    font-size: 15px;
+}
+
 .box-icons i {
     font-size: 40px;
 }
