@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif
+}
+
+html {
+    scrollbar-color: #ffffff #343a40;
+    scrollbar-width: thin;
+}
+
+.navbar a {
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #17a2b8 !important;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    height: calc(100vw * 0.5625);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.desktop {
+    position: absolute;
+    left: 0;
+    bottom: 200px;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+.desktop h5 {
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 25px;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.desktop p {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.desktop a {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.desktop a:hover {
+    background-color: #17a2b8;
+}
+
+.services {
+    padding: 80px 0;
+}
+
+.bg-car1 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(/img/iphone-15promax.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-car2 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(/img/iphone-15pro.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-car3 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url(/img/iphone-15.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.box-icons i {
+    font-size: 40px;
+    color: #17a2b8;
+}
+
+.box-icons {
+    transition: transform 0.3s ease;
+}
+
+.box-icons:hover {
+    transform: translateY(-10px);
+}
+
+.box-icons h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.box-icons p {
+    font-size: 16px;
+    color: #666;
+}
+
+.product {
+    padding: 80px 0;
+}
+
+.card img {
+    width: 150px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card2 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card2 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
+}
+
+.card2:hover img {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+.card a {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #17a2b8;
+}
+
+.banner {
+    padding: 80px 0;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.iPhone {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 40px;
+}
+
+.iPhone h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.iPhone p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.custom-link:link, .custom-link:visited, .custom-link:hover, .custom-link:active {
+    color: white;
+    text-decoration: none;
+}
+.titular h2{
+    font-size: 50px;
+}
+.navbar-brand img {
+    width: 35px;
+}
+
+.text-center img {
+    object-fit: contain;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+}
+
+footer h5 {
+    color: #17a2b8;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #17a2b8;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer .bi {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+footer hr {
+    border-color: #6c757d;
+}
+
+.contact {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.contact h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #17a2b8;
+}
+
+@media(max-width: 767px) {
+    .video {
+        min-height: 500px;
+    }
+
+    .video video {
+        height: 525px;
+    }
+
+    .desktop {
+        top: 100px;
+    }
+
+    .desktop h5 {
+        font-size: 38px;
+        margin-top: 0;
+    }
+
+    .desktop p {
+        display: none;
+    }
+
+    .services {
+        padding: 30px 0;
+    }
+
+    .product {
+        padding: 30px 0 0 0;
+    }
+
+    .banner {
+        margin-bottom: 30px;
+        padding: 80px 0;
+        background-color: #343a40;
+        color: #fff;
+    }
+    .banner img{
+        width: 300px;
+    }
+    .iPhone {
+        margin-left: 0;
+        max-width: fit-content;
+    }
+    .titular {
+        margin-top: 50px;
+    }
+    .titular h2{
+        font-size: 48px;
+    }
+
+    .text-center img {
+        object-fit: fill;
+        width: 190px;
+        height: 230px;
+        margin-top: 30px;
+    }
+
+    .imgg img{
+        object-fit: contain;
+        width: 100%;
+    }
+}
+#price-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#price-container p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .video {
+        min-height: 500px;
+    }
+
+    .video video {
+        height: 525px;
+    }
+
+    .desktop {
+        top: 100px;
+    }
+
+    .desktop h5 {
+        font-size: 38px;
+        margin-top: 0;
+    }
+
+    .desktop p {
+        display: none;
+    }
+
+    .services {
+        padding: 30px 0;
+    }
+
+    .product {
+        padding: 30px 0 0 0;
+    }
+
+    .banner {
+        margin-bottom: 30px;
+    }
+    .banner img{
+        width: 300px;
+    }
+    .iPhone {
+        margin-left: 0;
+        max-width: fit-content;
+    }
+    .titular {
+        margin-top: 50px;
+    }
+    .titular h2{
+        font-size: 48px;
+    }
+
+    .text-center img {
+        object-fit: none;
+        width: 200px;
+    }
+    
+    .imgg img{
+        object-fit: contain;
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    footer .text-md-start, 
+    footer .text-md-end {
+        text-align: center !important;
+    }
+
+    footer ul.d-flex {
+        justify-content: center !important;
+    }
+}
